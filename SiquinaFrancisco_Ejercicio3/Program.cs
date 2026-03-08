@@ -27,3 +27,15 @@ metodoPago = int.Parse(Console.ReadLine());
 
 Console.Write("Tiene cupon (S/N): ");
 tieneCupon = Console.ReadLine();
+
+if (tieneCupon == "S")
+{
+    Console.Write("Ingrese codigo del cupon: ");
+    codigoCupon = Console.ReadLine();
+}
+
+Console.WriteLine("Reporte antifraude:");
+Console.WriteLine("1 Ninguno");
+Console.WriteLine("2 Cupon invalido repetido");
+Console.WriteLine("3 Pagos rechazados multiples");
+antifraude = int.Parse(Console.ReadLine());
